@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#board {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  background-color: #efefff;
+}
+
+#board [data-step] {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: 400px;
+  border: 2px solid #9f9f9f;
+  padding: 10px;
+}
+
+#board [data-step].dragover {
+  border-style: dashed;
+}
+
+#board [data-step="2"] {
+  left: 334px;
+}
+
+#board #stories {
+  position: absolute;
+}
+
+#board #stories > div {
+  position: absolute;
+  z-index: 1;
+  height: 80px;
+  width: 260px;
+  background-color: #cfcfff;
+  padding: 10px;
+}
